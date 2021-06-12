@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+    font-family: 'Courier Prime', monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background-color: #b4c1d1;
+    text-align: center;
+    margin:10px 0px 10px 0px;
+}
+
+.sidebar{
+    float:left;
+    width:20%;
+}
+
+.content{
+    width:80%;
+    text-align: center;
+}
