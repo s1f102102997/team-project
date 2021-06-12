@@ -7,7 +7,15 @@ h1{
     text-align: center;
 }
 
+h3{
+    text-align: center;
+}
+
 h4{
+    text-align: center;
+}
+
+p{
     text-align: center;
 }
 
@@ -29,4 +37,8 @@ li{
 .content{
     width:80%;
     text-align: center;
+}
+
+.overview{
+    width:80%;
 }
