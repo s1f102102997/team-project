@@ -18,3 +18,12 @@ h2 {
 	height: 250px; 
 	border: solid 1px #ccc; 
 }
+
+div {
+	background-color: #ff0000;
+}
+
+body {
+	background-color: #000000;
+}
+
