@@ -31,10 +31,6 @@ li{
     margin:10px 0px 10px 0px;
 }
 
-nav{
-    float:left;
-    width:20%;
-}
 
 .content{
     width:80%;
@@ -47,7 +43,7 @@ nav{
     display: flex;
     overflow: hidden;
     color: black;
-  }
+}
 
   .title span {
     display: block;
@@ -69,7 +65,7 @@ nav{
     transition-delay: 0.18s;
   }
 
-  nav{
+nav{
     text-align: center;
 }
 
@@ -103,4 +99,3 @@ nav a:hover{
     color:#F7CB4D;
     border-bottom:2px solid #F7CB4D;
 }
-  
