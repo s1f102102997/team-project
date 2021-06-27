@@ -2,30 +2,55 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
-        <link rel="stylesheet" href="sushi.css">
+        <title>おすしのページ</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/sushi.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
     <body>
         <!--サイドバー-->
-        <div class="sidebar">
+        <nav>
             <ul>
                 <li><a href="home.html">ホーム</a></li>
                 <li><a href="ramen.html">ラーメン</a></li>
                 <li><a href="pasta.html">パスタ</a></li>
                 <li><a href="sushi.html">おすし</a></li>
             </ul>
-        </div>
+        </nav>
 
         <div class="content">
-        <h1>おすしのページ</h1>
-        <h3>寿司ネタランキング</h3>
-        <p>寿司ネタランキングかく</p>
+        <h1 class="TextTyping">おすしのページ</h1>
+
+            <script src="js/sushi.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <div class="loop_wrap">
+            <img src="image/sushi4.png"><img src="image/sushi4.png">
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h3>(自分的)寿司ネタランキング</h3>
+            <p class="topping"> 
+                1.ねぎとろ<br>
+                2.サーモン<br>
+                3.えんがわ<br>
+                4.いくら<br>
+                5.甘エビ<br>
+            </p>
         <h3>リーズナブルなお店</h3>
-        <p>お店を書く</p>
-        <h3>いつかは行きたいお店</h3>
-        <p>お店を書く</p>
+        <div class="navi">
+            <a href="https://www.kurasushi.co.jp/" class="btn03 pushdown"><span>1.くら寿司</span></a><br><br>
+            <a href="https://www.hama-sushi.co.jp/" class="btn03 pushdown"><span>2.はま寿司</span></a><br><br>
+            <a href="https://www.kappasushi.jp/" class="btn03 pushdown"><span>3.かっぱ寿司</span></a><br><br>
+            <a href="https://www.akindo-sushiro.co.jp/" class="btn03 pushdown"><span>4.スシロー</span></a><br><br>
+            <a href="https://www.kyotaru.co.jp/kaisen_misakiko/" class="btn03 pushdown"><span>5.海鮮三崎港</span></a><br><br>
+        </div>
         </div>
     </body>
 </html>

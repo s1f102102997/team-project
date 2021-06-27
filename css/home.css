@@ -1,12 +1,18 @@
 @charset "UTF-8";
 body{
     font-family: 'Courier Prime', monospace;
+    background-color: #FFFFCC;
+}
+
+header{
+  display:inline;
 }
 
 h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-shadow:4px 4px 2px #ff773e
 }
 
 h3{
@@ -23,17 +29,13 @@ p{
 
 ul{
     list-style:none;
+    text-align: right;
 }
 
 li{
     background-color:#ff773e;
     text-align: center;
-    margin:10px 0px 10px 0px;
-}
-
-nav{
-    float:left;
-    width:20%;
+    margin:10px ;
 }
 
 .content{
