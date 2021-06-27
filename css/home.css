@@ -2,6 +2,7 @@
 body{
     font-family: 'Courier Prime', monospace;
     background-color: #FFFFCC;
+    text-align: center;
 }
 
 header{
@@ -35,21 +36,20 @@ ul{
 li{
     background-color:#ff773e;
     text-align: center;
-    margin:10px ;
+    margin:10px 0px 10px 0px;
 }
 
 .content{
-    width:80%;
     text-align: center;
 }
 
 @import
 
-.title {
+.title{
     display: flex;
     overflow: hidden;
     color: black;
-  }
+}
 
   .title span {
     display: block;
@@ -70,4 +70,39 @@ li{
   .title span:nth-child(4) {
     transition-delay: 0.18s;
   }
-  
+
+nav{
+    text-align: center;
+}
+
+nav ul{
+    margin: 0 ;
+    padding: 100px ;
+    text-align: center;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 90px;
+}
+
+nav li:not(:last-child){
+    border-right:2px solid #ddd;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+}
+
+nav a.current{
+    color: #00B0F0;
+    border-bottom:2px solid #00B0F0;
+}
+
+nav a:hover{
+    color:#F7CB4D;
+    border-bottom:2px solid #F7CB4D;
+}
