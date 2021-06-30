@@ -1,27 +1,55 @@
-h1{
-    text-align: left;
+@charset "UTF-8";
+/*botann*/
+.btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+  .btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;
+  }
+
+  /*rannkinngu*/
+  .defaultlist
+,.defaultlist li{
+	padding:0px;
+	margin:0px;
 }
-h3{
-    text-align: left;
+ 
+.defaultlist li{
+	list-style-type:none !important;
+	list-style-image:none !important;
+	margin: 5px 0px 5px 0px !important;
 }
-h
-nav{
-    float:left;
-    width:20%;
+ 
+.list10{
+	counter-reset:li;   
+}
+ 
+.list10 li{
+	position:relative;
+	display: block;
+	padding:10px 0px 10px 30px; 
+	margin-left:0px !important;
+}
+ 
+li.list10-count:after{
+	counter-increment: li;
+	content: counter(li) ".";
+	position: absolute;	
+	display: block;
+	text-align: center;
+	font-style: italic;
+	left: 0px;
+	top: -1px;
+	font-size: 30px;
+	color:#bbb;
+	font-family:'Goudy Bookletter 1911',Georgia,serif; 
 }
 
-.content{
-    width:80%;
-    text-align: center;
-}
-
-.top-banner{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.top-banner li img {
-	width: 300px; 
-	height: 250px; 
-	border: solid 1px #ccc; 
-}
