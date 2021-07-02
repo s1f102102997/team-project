@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>パスタ</title>
-    <link rel="stylesheet"
-    type="text/css" href="pasta.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/pasta.css">
     </head>
+    
     <body>
         <!--サイドバー-->
-        <div class="all">
             <nav>
                 <ul>
                     <li><a href="home.html">ホーム</a></li>
@@ -17,39 +17,42 @@
                     <li><a href="sushi.html">おすし</a></li>
                 </ul>
             </nav>
-        </div>
-        
-        <h2>パスタの味ランキング</h2>
-        <ol class="defaultlist list10">
-            <li class="list10-count">トマトソース</li>
-            <li class="list10-count">ジェノベーゼ</li>
-            <li class="list10-count">ボンゴレ</li>
+        <ul class="slider">
+            <li class="slider-item slider-item01"></li>
+            <li class="slider-item slider-item02"></li>
+            <li class="slider-item slider-item03"></li>
+            <li class="slider-item slider-item04"></li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--自作のJS-->
+<script src="js/pasta.js"></script>
+        <h3> -&nbsp;&nbsp;パスタの味ランキング&nbsp; -</h3>
+        <ol class="ranking">
+            <li> トマトソース</li>
+            <br>
+            <li> ジェノベーゼ</li>
+            <br>
+            <li> ボンゴレ</li>
          </ol>
         
-    
-    <h3>お店</h3>
+    <br>
+    <h3!:1em;text-indent:-1emimportant;padding-left>&nbsp;&nbsp;- &nbsp;&nbsp;お店&nbsp;&nbsp; -</h3>
         <ul>
-            <a href="https://shango.co.jp/" class="btn-flat-border">
-            <li>シャンゴ</li>
-            </a>
-            <a href="https://www.compleanno1999.com/" class="btn-flat-border">
-            <li>コンプレアノ</li>
-            </a>
-            <a href="https://www.saint-marc-hd.com/kamakura/" class="btn-flat-border">
-            <li>鎌倉パスタ</li>
-            </a>
-            <a href="http://www.buongiorno1982.com/" class="btn-flat-border">
-            <li>ボンジョルノ</li>
-            </a>
-        </ul>
-    <h3>写真</h3
-<div class="slider">
-    <img src="https://vox.athome.co.jp/vox/wp-content/uploads/shango13.jpg" width="500" height="300" alt="">
-    <img src="https://imgfp.hotp.jp/IMGH/11/09/P013281109/P013281109_480.jpg" width="500" height="300" alt="">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/89/18/d5/caption.jpg" width="500" height="300" alt="">
-    <img src="bonnjoruno.jpeg" width="500" height="300" alt="">
-    </div>
-    
-   
-    </body>
+            <a href="https://shango.co.jp/" class="cp_textlink01" !important;padding-left:1em;textindent:-1em>
+            シャンゴ</a>
+            </ul>
+            <ul>
+            <a href="https://www.compleanno1999.com/" class="cp_textlink01">
+            コンプレアノ</a></ul>
+            <ul>
+            <a href="https://www.saint-marc-hd.com/kamakura/" class="cp_textlink01">
+            鎌倉パスタ</a></ul>
+            <ul>
+            <a href="http://www.buongiorno1982.com/" class="cp_textlink01">
+            ボンジョルノ</a>
+        </li>    
+        
+
+</body>
 </html>
