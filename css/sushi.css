@@ -1,0 +1,201 @@
+@charset "UTF-8";
+body{
+    font-family: 'Courier Prime', monospace;
+    background-color: #FFFFCC;
+}
+
+h1{
+  text-align: center;
+  letter-spacing: .3em;
+  word-break : break-all;
+}
+  
+.TextTyping {
+    text-align: center;
+  }
+  
+  /*========= タイピング ===============*/
+  
+  .TextTyping span {
+    display: none;
+  }
+  
+  /*文字列後ろの線の設定*/
+  .TextTyping::after {
+    content: "|";
+    animation: typinganime .8s ease infinite;
+  }
+  
+  @keyframes typinganime{
+    from{opacity:0}
+    to{opacity:1}
+  }
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background-color:#ff773e;
+    text-align: center;
+    margin:10px 0px 10px 0px;
+}
+
+.sidebar{
+    display:flex;
+    flex-flow: column;
+}
+
+nav{
+  text-align: center;
+}
+
+nav ul{
+  margin: 0 ;
+  padding: 100px ;
+  text-align: center;
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  min-width: 90px;
+}
+
+nav li:not(:last-child){
+  border-right:2px solid #ddd;
+}
+
+nav a{
+  text-decoration: none;
+  color: #333;
+}
+
+nav a.current{
+  color: #00B0F0;
+  border-bottom:2px solid #00B0F0;
+}
+
+nav a:hover{
+  color:#F7CB4D;
+  border-bottom:2px solid #F7CB4D;
+}
+
+.content{
+    text-align: center;
+}
+
+.topping{
+    display: inline-block;
+    text-align: left;
+}
+
+.reasonable{
+    display: inline-block;
+    text-align: left;
+}
+
+.loop_wrap {
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .loop_wrap img {
+    width: auto;
+    height: 100%;
+  }
+
+  @keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  .loop_wrap img:first-child {
+    animation: loop 50s -25s linear infinite;
+  }
+  
+  .loop_wrap img:last-child {
+    animation: loop2 50s linear infinite;
+  }
+
+  .btn03{
+    /*影の基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+    text-align: center;
+    background: transparent;
+  border-radius: 25px;
+  border: solid 1px #333;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all 0.2s ease;
+}
+
+/*hoverをした後のボタンの形状*/
+.btn03:hover{
+  border-color:transparent; 
+}
+
+/*ボタンの中のテキスト*/
+.btn03 span {
+  position: relative;
+  z-index: 2;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+    /*テキストの形状*/
+  display: block;
+    padding: 10px 30px;
+  background:#fff;
+  border-radius: 25px;
+  color:#333;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease;
+}
+
+/*== 下に押し込まれる（立体が平面に） */
+
+/*影の設定*/
+.pushdown:before {
+    content:"";
+    /*絶対配置で影の位置を決める*/
+    position: absolute;
+  z-index: -1;
+    top:4px;
+    left:0;
+    /*影の形状*/
+    width: 100%;
+    height: 100%;
+  border-radius: 25px;
+    background-color: #333;
+}
+
+/*hoverの際にY軸に4pxずらす*/
+.pushdown:hover span {
+  background-color: #333;
+  color: #fff;
+  transform: translateY(4px);
+}
