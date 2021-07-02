@@ -4,6 +4,10 @@ body{
 	text-align: center;
 	font-style: italic;
 }
+h1{
+	text-align: center;
+	color: #92817a;
+}
 #wrap{
 	width: 960px;
 	margin: 0 auto;
@@ -147,4 +151,47 @@ h3{
   }
   
   .slick-dots .slick-active button{
-	  background:#86aba1;/*ドットボタンの現在地表示の色*/
+	  background:#86aba1;/*ドットボタンの現在地表示の色*
+
+/*各ページへのlink*/
+
+.content{
+  width:100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul{
+  padding: 0px ;
+  margin-bottom: 50px;
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  min-width: 90px;
+}
+
+nav li:not(:last-child){
+  border-right:2px solid #ddd;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.ccurent a{
+  color: #00B0F0;
+  border-bottom:2px solid #00B0F0;
+}
+
+nav a:hover{
+  color:#F7CB4D;
+  border-bottom:2px solid #F7CB4D;
+}
