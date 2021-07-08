@@ -8,22 +8,39 @@ h1{
 	text-align: center;
 	color: #92817a;
 }
-#wrap{
-	width: 960px;
-	margin: 0 auto;
-	text-align: left;
-}
-ul{
-	text-align: center;
-}
+
 li.list10-count{
 	text-align: center;
 	color: #92817a;
 }
 h3{ 
-	text-align: relative;
+	text-align: center;
 	color: #d68060;
 }
+/*各ページへのリンク*/
+nav{
+	text-align: center;
+	}
+	nav ul{
+	margin: 0 ;
+	padding: 0 ;
+	}
+	nav ul li{
+	list-style: none;
+	display: inline-block;
+	width: 18%;
+	min-width: 90px;
+	}
+	nav ul li a{
+	text-decoration: none;
+	color: #92817a;
+	}
+	nav ul li.current a{
+	color: #dff3e3;
+	}
+	nav ul li a:hover{
+	color: #d68060;
+	}
 /*link*/
 .cp_textlink01 {
 	position: relative;
@@ -62,11 +79,13 @@ h3{
 	content: counter(ranking-counter) ".";
   }
   
-  ol {
+  ol{
 	list-style-type: none;
 	padding: 10pm;
   }
-  
+  p{
+	color: #92817a;
+  }
   
 
 /*==================================================
@@ -151,47 +170,4 @@ h3{
   }
   
   .slick-dots .slick-active button{
-	  background:#86aba1;/*ドットボタンの現在地表示の色*
-
-/*各ページへのlink*/
-
-.content{
-  width:100%;
-  font-size: 20px;
-  text-align: center;
-}
-
-nav {
-  text-align: center;
-}
-
-nav ul{
-  padding: 0px ;
-  margin-bottom: 50px;
-}
-
-nav li{
-  list-style: none;
-  display: inline-block;
-  width: 10%;
-  min-width: 90px;
-}
-
-nav li:not(:last-child){
-  border-right:2px solid #ddd;
-}
-
-nav a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.ccurent a{
-  color: #00B0F0;
-  border-bottom:2px solid #00B0F0;
-}
-
-nav a:hover{
-  color:#F7CB4D;
-  border-bottom:2px solid #F7CB4D;
-}
+	  background:#86aba1;/*ドットボタンの現在地表示の色*/
