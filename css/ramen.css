@@ -37,6 +37,16 @@ li{
     margin:10px 0px 10px 0px;
 }
 
+.fine {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fine li{
+    margin-right: 200px;
+}
+
 .big {
     font-size: 30px;
     display: flex;
@@ -218,4 +228,10 @@ input:checked ~ .in img,input:checked ~ .in span::before{
     animation-play-state:paused;/* マウスを載せると一時停止 */
 }
 
+#foo {
+    font-size: 30px;
+    border-top: solid medium;
+    text-align: center;
+    margin-top: 100px;
+}
 
